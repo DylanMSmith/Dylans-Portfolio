@@ -1,0 +1,439 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:600|Open+Sans:600&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  background-color: #2f4f4f;
+}
+.sidebar{
+  position: fixed;
+  width: 240px;
+  left: -240px;
+  height: 100%;
+  background: #1e1e1e;
+  transition: all .5s ease;
+}
+.sidebar header{
+  font-size: 28px;
+  color: white;
+  line-height: 70px;
+  text-align: center;
+  background: #1b1b1b;
+  user-select: none;
+  font-family: 'Montserrat', sans-serif;
+}
+.sidebar a{
+  display: block;
+  height: 65px;
+  width: 100%;
+  color: white;
+  line-height: 65px;
+  padding-left: 30px;
+  box-sizing: border-box;
+  border-bottom: 1px solid black;
+  border-top: 1px solid rgba(255,255,255,.1);
+  border-left: 5px solid transparent;
+  font-family: 'Open Sans', sans-serif;
+  transition: all .5s ease;
+}
+a.active,a:hover{
+  border-left: 5px solid #b93632;
+  color: #b93632;
+}
+.sidebar a i{
+  font-size: 23px;
+  margin-right: 16px;
+}
+.sidebar a span{
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+#check{
+  display: none;
+}
+label #btn,label #cancel{
+  position: fixed;
+  cursor: pointer;
+  color: white;
+  border-radius: 5px;
+  border: 1px solid #262626;
+  margin: 15px 30px;
+  font-size: 29px;
+  background: #262626;
+  height: 45px;
+  width: 45px;
+  text-align: center;
+  line-height: 45px;
+  transition: all .5s ease;
+}
+label #cancel{
+  opacity: 0;
+  visibility: hidden;
+}
+#check:checked ~ .sidebar{
+  left: 0;
+}
+#check:checked ~ label #btn{
+  margin-left: 245px;
+  opacity: 0;
+  visibility: hidden;
+}
+#check:checked ~ label #cancel{
+  margin-left: 245px;
+  opacity: 1;
+  visibility: visible;
+}
+
+.Title{
+  text-align: center;
+  color: #FFFFF0;
+  font-size: 75px;
+  font-family: 'Playfair Display', serif;
+  font-weight: 700;
+  font-style: italic;
+  margin-bottom: 200px;
+}
+
+.About-Me{
+  text-align: center;
+  color: #FFFFF0;
+  font-size: 50px;
+  font-family: 'Playfair Display', serif;
+  font-weight: 700;
+  font-style: italic;
+  margin-bottom: 50px;
+}
+/* Made all boxes on page have rounded borders and shadow */
+.about-me-text{
+  text-align: center;
+  color: #E0FFFF;
+  font-size: 25px;
+  font-family: 'Playfair Display', serif;
+  height: 25px;
+  width: 40%;
+  padding: 20px;
+  margin: auto;
+  background-color: #778899;
+  box-shadow: 10px 10px 20px 10px black;
+  margin-bottom: 200px;
+  border-radius: 25px;
+}
+
+.Projects{
+  text-align: center;
+  color: #FFFFF0;
+  font-size: 50px;
+  font-family: 'Playfair Display', serif;
+  font-weight: 700;
+  font-style: italic;
+  margin-bottom: 50px;
+}
+
+/* I'm not sure how to change the look of the link */
+.Horiseon{
+  text-align: center;
+  color: #E0FFFF;
+  font-size: 25px;
+  
+  height: 25px;
+  width: 40%;
+  padding: 20px 20px 100px 20px;
+  margin: auto;
+  background-color: #778899;
+  box-shadow: 10px 10px 20px 10px black;
+  margin-bottom: 200px;
+  border-radius: 25px;
+}
+
+.Project2{
+  text-align: center;
+  color: #E0FFFF;
+  font-size: 25px;
+  
+  height: 25px;
+  width: 40%;
+  padding: 20px 20px 70px 20px;
+  margin: auto;
+  background-color: #778899;
+  box-shadow: 10px 10px 20px 10px black;
+  margin-bottom: 100px;
+  border-radius: 25px;
+}
+
+.Project3{
+  text-align: center;
+  color: #E0FFFF;
+  font-size: 25px;
+  
+  height: 25px;
+  width: 40%;
+  padding: 20px 20px 70px 20px;
+  margin: auto;
+  background-color: #778899;
+  box-shadow: 10px 10px 20px 10px black;
+  margin-bottom: 100px;
+  border-radius: 25px;
+}
+
+.Project4{
+  text-align: center;
+  color: #E0FFFF;
+  font-size: 25px;
+  
+  height: 25px;
+  width: 40%;
+  padding: 20px 20px 70px 20px;
+  margin: auto;
+  background-color: #778899;
+  box-shadow: 10px 10px 20px 10px black;
+  margin-bottom: 100px;
+  border-radius: 25px;
+}
+
+.Project5{
+  text-align: center;
+  color: #E0FFFF;
+  font-size: 25px;
+  
+  height: 25px;
+  width: 40%;
+  padding: 20px 20px 70px 20px;
+  margin: auto;
+  background-color: #778899;
+  box-shadow: 10px 10px 20px 10px black;
+  margin-bottom: 100px;
+  border-radius: 25px;
+}
+
+.Contact-Me{
+  text-align: center;
+  color: #FFFFF0;
+  font-size: 25px;
+  font-family: 'Playfair Display', serif;
+  font-weight: 700;
+  font-style: italic;
+  margin-bottom: 50px;
+}
+
+.contact-me-text{
+  text-align: center;
+  color: #FFFFF0;
+  font-size: 15px;
+  font-family: 'Playfair Display', serif;
+  font-style: normal;
+  margin-bottom: 25px;
+}
+
+
+
+@media(max-width : 860px){
+  .sidebar{
+    height: auto;
+    width: 70px;
+    left: 0;
+    margin: 100px 0;
+  }
+  header,#btn,#cancel{
+    display: none;
+  }
+  span{
+    position: absolute;
+    margin-left: 23px;
+    opacity: 0;
+    visibility: hidden;
+  }
+  .sidebar a{
+    height: 60px;
+  }
+  .sidebar a i{
+    margin-left: -10px;
+  }
+  a:hover {
+    width: 200px;
+    background: inherit;
+  }
+  .sidebar a:hover span{
+    opacity: 1;
+    visibility: visible;
+  }
+}
+/* I know this could be condensed and coded better, but I couldn't figure out how to. Everytime my about me text ran out of the provided box, I made the padding on the bottom extend further. */
+@media(max-width : 1820px){
+  .about-me-text{
+    text-align: center;
+    color: #E0FFFF;
+    font-size: 25px;
+    font-family: 'Playfair Display', serif;
+    height: 25px;
+    width: 40%;
+    padding: 20px 20px 50px 20px;
+    margin: auto;
+    background-color: #778899;
+    box-shadow: 10px 10px 20px 10px black;
+    margin-bottom: 200px;
+    border-radius: 25px;
+  }
+  
+}
+
+@media(max-width : 952px){
+  .about-me-text{
+    text-align: center;
+    color: #E0FFFF;
+    font-size: 25px;
+    font-family: 'Playfair Display', serif;
+    height: 25px;
+    width: 40%;
+    padding: 20px 20px 50px 20px;
+    margin: auto;
+    background-color: #778899;
+    box-shadow: 10px 10px 20px 10px black;
+    margin-bottom: 200px;
+    border-radius: 25px;
+  }
+  
+}
+
+@media(max-width : 952px){
+  .about-me-text{
+    text-align: center;
+    color: #E0FFFF;
+    font-size: 25px;
+    font-family: 'Playfair Display', serif;
+    height: 25px;
+    width: 40%;
+    padding: 20px 20px 75px 20px;
+    margin: auto;
+    background-color: #778899;
+    box-shadow: 10px 10px 20px 10px black;
+    margin-bottom: 200px;
+    border-radius: 25px;
+  }
+  
+}
+
+@media(max-width : 610px){
+  .about-me-text{
+    text-align: center;
+    color: #E0FFFF;
+    font-size: 25px;
+    font-family: 'Playfair Display', serif;
+    height: 25px;
+    width: 40%;
+    padding: 20px 20px 100px 20px;
+    margin: auto;
+    background-color: #778899;
+    box-shadow: 10px 10px 20px 10px black;
+    margin-bottom: 200px;
+    border-radius: 25px;
+  }
+  
+}
+
+@media(max-width : 539px){
+  .about-me-text{
+    text-align: center;
+    color: #E0FFFF;
+    font-size: 25px;
+    font-family: 'Playfair Display', serif;
+    height: 25px;
+    width: 40%;
+    padding: 20px 20px 125px 20px;
+    margin: auto;
+    background-color: #778899;
+    box-shadow: 10px 10px 20px 10px black;
+    margin-bottom: 200px;
+    border-radius: 25px;
+  }
+  
+}
+
+@media(max-width : 449px){
+  .about-me-text{
+    text-align: center;
+    color: #E0FFFF;
+    font-size: 25px;
+    font-family: 'Playfair Display', serif;
+    height: 25px;
+    width: 40%;
+    padding: 20px 20px 150px 20px;
+    margin: auto;
+    background-color: #778899;
+    box-shadow: 10px 10px 20px 10px black;
+    margin-bottom: 200px;
+    border-radius: 25px;
+  }
+  
+}
+
+@media(max-width : 370px){
+  .about-me-text{
+    text-align: center;
+    color: #E0FFFF;
+    font-size: 25px;
+    font-family: 'Playfair Display', serif;
+    height: 25px;
+    width: 40%;
+    padding: 20px 20px 175px 20px;
+    margin: auto;
+    background-color: #778899;
+    box-shadow: 10px 10px 20px 10px black;
+    margin-bottom: 200px;
+    border-radius: 25px;
+  }
+  
+}
+
+@media(max-width : 322px){
+  .about-me-text{
+    text-align: center;
+    color: #E0FFFF;
+    font-size: 25px;
+    font-family: 'Playfair Display', serif;
+    height: 25px;
+    width: 40%;
+    padding: 20px 20px 200px 20px;
+    margin: auto;
+    background-color: #778899;
+    box-shadow: 10px 10px 20px 10px black;
+    margin-bottom: 200px;
+    border-radius: 25px;
+  }
+  
+}
+
+@media(max-width : 286px){
+  .about-me-text{
+    text-align: center;
+    color: #E0FFFF;
+    font-size: 25px;
+    font-family: 'Playfair Display', serif;
+    height: 25px;
+    width: 40%;
+    padding: 20px 20px 280px 20px;
+    margin: auto;
+    background-color: #778899;
+    box-shadow: 10px 10px 20px 10px black;
+    margin-bottom: 200px;
+    border-radius: 25px;
+  }
+  
+}
+
+@media(max-width : 215px){
+  .about-me-text{
+    text-align: center;
+    color: #E0FFFF;
+    font-size: 20px;
+    font-family: 'Playfair Display', serif;
+    height: 25px;
+    width: 40%;
+    padding: 20px 20px 210px 20px;
+    margin: auto;
+    background-color: #778899;
+    box-shadow: 10px 10px 20px 10px black;
+    margin-bottom: 200px;
+    border-radius: 25px;
+  }
+  
+}
